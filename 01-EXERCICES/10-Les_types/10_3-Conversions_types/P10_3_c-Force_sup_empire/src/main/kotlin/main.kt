@@ -1,8 +1,9 @@
 
 fun main() {
-    val empiresShip = readln().toDouble()
-    val alliancesShip = readln().toDouble()
-    val ratioDouble: Double = empiresShip / alliancesShip
+    val empiresShip = readln().toString()
+    val alliancesShip = readln().toString()
+
+    val ratioDouble: Double = empiresShip.toDouble() / alliancesShip.toDouble()
     val ratio = ratioDouble.toInt()
     println(ratio)
 }

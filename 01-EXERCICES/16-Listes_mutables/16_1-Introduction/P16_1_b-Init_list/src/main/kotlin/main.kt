@@ -1,5 +1,5 @@
 fun main() {
-    val numbers = // put your code here
+    val numbers = mutableList(10) {0}
 
         // do not touch the lines below
         println(numbers.joinToString())

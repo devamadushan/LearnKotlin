@@ -2,8 +2,6 @@ fun main() {
     println(findYears(650000.0))
 }
 
-
-
 fun findYears(depo: Double): Int{
     var deposit = depo
     val interestRate = 1.071
@@ -12,5 +10,10 @@ fun findYears(depo: Double): Int{
     //
     // implement the while loop here
     //
+    do {
+        years++
+        deposit= deposit*1.071
+    } while (deposit<=700000)
+
     return years
 }
